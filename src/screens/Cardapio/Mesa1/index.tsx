@@ -2,6 +2,7 @@ import { FlatList } from 'react-native';
 import  { Hamburguer } from '../Hamburguer';
 import { Container, LogoBox, BoxMesa1, Mesa1, PratosBox, BurgerText, Frase, BurguersBox, BoxBackButton, BackButton, BackIcon, LogoImg } from './styles';
 import  myburger from '../../../../assets/myburger.png';
+import { ImageFive, ImageFour, ImageOne, ImageSix, ImageThree, ImageTwo } from '../../../components/ImagesCardapio';
 
 
 type Props = {
@@ -49,6 +50,7 @@ export function Cardapio({ showBackButton = false}: Props){
                     renderItem={() => (
                     <>
                         <Hamburguer 
+                            imagem={<ImageOne/>}
                             mesa1={'MESA 1'}  
                             numero={'1'} 
                             burgerName={'CHEESEBURGER CLÁSSICO'}
@@ -58,6 +60,7 @@ export function Cardapio({ showBackButton = false}: Props){
                             showAlert2={false}
                         />
                             <Hamburguer 
+                            imagem={<ImageTwo/>}
                             mesa1={'MESA 1'}  
                             numero={'2'} 
                             burgerName={'DOUBLE CHEESEBURGER'}
@@ -67,6 +70,7 @@ export function Cardapio({ showBackButton = false}: Props){
                             showAlert2={false}
                         />
                         <Hamburguer 
+                            imagem={<ImageThree/>}
                             mesa1={'MESA 1'}  
                             numero={'3'} 
                             burgerName='TRIPLE CHEESEBURGER'
@@ -76,6 +80,7 @@ export function Cardapio({ showBackButton = false}: Props){
                             showAlert2={false}
                         />
                         <Hamburguer 
+                            imagem={<ImageFour/>}
                             mesa1={'MESA 1'}  
                             numero={'4'} 
                             burgerName='THE BIG MY BURGER'
@@ -85,6 +90,7 @@ export function Cardapio({ showBackButton = false}: Props){
                             showAlert2={false}
                         />
                         <Hamburguer
+                            imagem={<ImageFive/>}
                             mesa1={'MESA 1'}  
                             numero={'5'} 
                             burgerName='FRIED CHICKENBURGER'
@@ -94,6 +100,7 @@ export function Cardapio({ showBackButton = false}: Props){
                             showAlert2={false}
                         />
                         <Hamburguer
+                            imagem={<ImageSix/>}
                             mesa1={'MESA 1'}  
                             numero={'6'} 
                             burgerName='FRIED VEGE BURGER'

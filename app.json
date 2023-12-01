@@ -18,10 +18,16 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gmartiiins0.MenuDigital"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f872d971-8734-4167-8417-e2266c10ab8d"
+      }
     }
   }
 }

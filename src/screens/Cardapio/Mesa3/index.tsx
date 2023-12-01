@@ -2,6 +2,7 @@ import { FlatList } from 'react-native';
 import  { Hamburguer } from '../Hamburguer';
 import { Container, LogoBox, BoxMesa1, Mesa1, PratosBox, BurgerText, Frase, BurguersBox, BoxBackButton, BackButton, BackIcon, LogoImg } from './styles';
 import  myburger from '../../../../assets/myburger.png';
+import { ImageFive, ImageFour, ImageOne, ImageSix, ImageThree, ImageTwo } from '../../../components/ImagesCardapio';
 
 type Props = {
     showBackButton?: boolean;
@@ -52,60 +53,65 @@ export function Cardapio3({ showBackButton = false}: Props){
                         <>
                             
                             <Hamburguer 
-                                mesa1={'MESA 3'}  
-                                numero={'1'} 
-                                burgerName={'CHEESEBURGER CLÁSSICO'}
-                                descricao={'Um suculento hambúrguer de carne grelhada coberto com uma fatia de queijo derretido, servido em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'}
-                                valoritem= {25.00}
-                                showAlert={true}
-                                showAlert2={false}
-                            />
-                             <Hamburguer 
-                                mesa1={'MESA 3'}  
-                                numero={'2'} 
-                                burgerName={'DOUBLE CHEESEBURGER'}
-                                descricao='Dois suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
-                                valoritem={30.00} 
-                                showAlert={true}
-                                showAlert2={false}
-                                
-                            />
-                           <Hamburguer 
-                                mesa1={'MESA 3'}  
-                                numero={'3'} 
-                                burgerName='TRIPLE CHEESEBURGER'
-                                descricao='Três suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
-                                valoritem={35.00}
-                                showAlert={true}
-                                showAlert2={false}
-                            />
+                            imagem={<ImageOne/>}
+                            mesa1={'MESA 3'}  
+                            numero={'1'} 
+                            burgerName={'CHEESEBURGER CLÁSSICO'}
+                            descricao={'Um suculento hambúrguer de carne grelhada coberto com uma fatia de queijo derretido, servido em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'}
+                            valoritem= {25.00}
+                            showAlert={true}
+                            showAlert2={false}
+                        />
                             <Hamburguer 
-                                mesa1={'MESA 3'}  
-                                numero={'4'} 
-                                burgerName='THE BIG MY BURGER'
-                                descricao='Três suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
-                                valoritem={32.50}
-                                showAlert={true}
-                                showAlert2={false}
-                            />
-                            <Hamburguer
-                                mesa1={'MESA 3'}  
-                                numero={'5'} 
-                                burgerName='FRIED CHICKENBURGER'
-                                descricao='Peito de frango crocante e macio revestido em uma cobertura temperada, servido em um pão macio com ingredientes como alface, tomate, maionese ou molho picante'
-                                valoritem={28.00}
-                                showAlert={true}
-                                showAlert2={false}
-                            />
-                            <Hamburguer
-                                mesa1={'MESA 3'}  
-                                numero={'6'} 
-                                burgerName='FRIED VEGE BURGER'
-                                descricao='Um hambúrguer à base de plantas feito, servido em um pão com ingredientes vegetarianos como alface, tomate, cebola e diversos molhos'
-                                valoritem={25.00}
-                                showAlert={true}
-                                showAlert2={false}
-                            />
+                            imagem={<ImageTwo/>}
+                            mesa1={'MESA 3'}  
+                            numero={'2'} 
+                            burgerName={'DOUBLE CHEESEBURGER'}
+                            descricao='Dois suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
+                            valoritem={30.00} 
+                            showAlert={true}
+                            showAlert2={false}
+                        />
+                        <Hamburguer 
+                            imagem={<ImageThree/>}
+                            mesa1={'MESA 3'}  
+                            numero={'3'} 
+                            burgerName='TRIPLE CHEESEBURGER'
+                            descricao='Três suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
+                            valoritem={35.00}
+                            showAlert={true}
+                            showAlert2={false}
+                        />
+                        <Hamburguer 
+                            imagem={<ImageFour/>}
+                            mesa1={'MESA 3'}  
+                            numero={'4'} 
+                            burgerName='THE BIG MY BURGER'
+                            descricao='Três suculentos hambúrgueres de carne grelhados, cobertos com uma fatia de queijo derretido, servidos em um pão macio com ingredientes tradicionais como alface, tomate, picles e condimentos como ketchup e mostarda'
+                            valoritem={32.50}
+                            showAlert={true}
+                            showAlert2={false}
+                        />
+                        <Hamburguer
+                            imagem={<ImageFive/>}
+                            mesa1={'MESA 3'}  
+                            numero={'5'} 
+                            burgerName='FRIED CHICKENBURGER'
+                            descricao='Peito de frango crocante e macio revestido em uma cobertura temperada, servido em um pão macio com ingredientes como alface, tomate, maionese ou molho picante'
+                            valoritem={28.00}
+                            showAlert={true}
+                            showAlert2={false}
+                        />
+                        <Hamburguer
+                            imagem={<ImageSix/>}
+                            mesa1={'MESA 3'}  
+                            numero={'6'} 
+                            burgerName='FRIED VEGE BURGER'
+                            descricao='Um hambúrguer à base de plantas feito, servido em um pão com ingredientes vegetarianos como alface, tomate, cebola e diversos molhos'
+                            valoritem={25.00}
+                            showAlert={true}
+                            showAlert2={false}
+                        />
                         </>
                     )}
                 />

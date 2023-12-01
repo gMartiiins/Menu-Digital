@@ -13,9 +13,10 @@ type Props = {
     valoritem: number;
     showAlert: boolean;
     showAlert2: boolean; 
+    imagem: React.ReactNode;
 }
 
-export function Hamburguer({ mesa1, numero, burgerName, descricao, valoritem, showAlert, showAlert2 }: Props) {
+export function Hamburguer({ mesa1, numero, burgerName, descricao, valoritem, showAlert, showAlert2, imagem }: Props) {
   
   const [indisponivelVisible, setIndisponivelVisible] = useState(false);
     
@@ -120,7 +121,7 @@ cartContext.adicionarAoCarrinho(pedido);
                             {numero}
                         </Number>
                     </NumberBox>
-                    <ImageOne />
+                    {imagem}
                 </BurgerImg>
                 
                 <TextBox>
